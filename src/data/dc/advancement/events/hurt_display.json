@@ -1,0 +1,21 @@
+{
+	"criteria": {
+		"hurt": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:interaction",
+                    "nbt": "{Tags:[dc.interaction]}"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"hurt"
+		]
+	],
+	"rewards": {
+		"function": "dc:event_listeners/hurt_display"
+	}
+}

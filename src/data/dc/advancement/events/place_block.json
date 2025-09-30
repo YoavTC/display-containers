@@ -1,0 +1,52 @@
+{
+	"criteria": {
+		"place": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"player": {
+					"flags": {
+						"is_sneaking": true
+					}
+				},
+				"location": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"blocks": "#dc:exclude_fillers"
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": "#dc:fillers"
+							}
+						}
+					},
+					{
+						"condition": "minecraft:location_check",
+						"offsetY": -1,
+						"predicate": {
+							"block": {
+								"blocks": "#dc:containers"
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"place"
+		]
+	],
+	"rewards": {
+		"function": "dc:event_listeners/place_block"
+	}
+}
