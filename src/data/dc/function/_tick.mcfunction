@@ -1,7 +1,3 @@
-schedule function dc:_tick 5t
+execute as @e[type=minecraft:block_display,tag=dc.display] positioned as @s if block ~ ~ ~ air unless block ~ ~-0.1 ~ barrel run function dc:destroy_display with entity @s block_state
 
-# Check for displays that should be cleared
-execute as @a[scores={dc.break_cauldron=0..}] positioned as @s rotated as @s anchored eyes positioned ^ ^ ^1.7 run return run function dc:break_block
-execute as @a[scores={dc.break_barrel=0..}] positioned as @s rotated as @s anchored eyes positioned ^ ^ ^1.7 run return run function dc:break_block
-execute as @a[scores={dc.break_composter=0..}] positioned as @s rotated as @s anchored eyes positioned ^ ^ ^1.7 run return run function dc:break_block
-execute as @a[scores={dc.break_hopper=0..}] positioned as @s rotated as @s anchored eyes positioned ^ ^ ^1.7 run function dc:break_block
+schedule function dc:_tick 5s

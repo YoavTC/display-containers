@@ -2,7 +2,7 @@
 	"pack": {
 		"description": [
 			{
-				"text": "Made by Yoav TC\n",
+				"text": "Display Containers v1.3\n",
 				"color": "dark_gray"
 			},
 			{
@@ -11,12 +11,7 @@
 				"underlined": true
 			}
 		],
-		"pack_format": 88,
-        "min_format": 81,
-        "max_format": 88,
-		"supported_formats": [
-			81,
-			88
-		]
+		"min_format": 88,
+		"max_format": 101
 	}
 }
