@@ -2,7 +2,7 @@
 	"pack": {
 		"description": [
 			{
-				"text": "Display Containers v1.3\n",
+				"text": "Display Containers v1.4\n",
 				"color": "dark_gray"
 			},
 			{
@@ -11,7 +11,7 @@
 				"underlined": true
 			}
 		],
-		"min_format": 88,
-		"max_format": 101
+		"min_format": 121,
+		"max_format": 121
 	}
 }

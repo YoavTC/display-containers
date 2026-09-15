@@ -4,40 +4,47 @@
 			"trigger": "minecraft:placed_block",
 			"conditions": {
 				"player": {
-					"flags": {
-						"is_sneaking": true
+					"type": "entity_properties",
+					"entity": "this",
+					"predicate": {
+						"flags": {
+							"is_sneaking": true
+						}
 					}
 				},
-				"location": [
-					{
-						"condition": "minecraft:inverted",
-						"term": {
-							"condition": "minecraft:location_check",
+				"location": {
+					"type": "all_of",
+					"terms": [
+						{
+							"type": "inverted",
+							"term": {
+								"type": "location_check",
+								"predicate": {
+									"block": {
+										"blocks": "#dc:exclude_fillers"
+									}
+								}
+							}
+						},
+						{
+							"type": "location_check",
 							"predicate": {
 								"block": {
-									"blocks": "#dc:exclude_fillers"
+									"blocks": "#dc:fillers"
+								}
+							}
+						},
+						{
+							"type": "location_check",
+							"offsetY": -1,
+							"predicate": {
+								"block": {
+									"blocks": "#dc:containers"
 								}
 							}
 						}
-					},
-					{
-						"condition": "minecraft:location_check",
-						"predicate": {
-							"block": {
-								"blocks": "#dc:fillers"
-							}
-						}
-					},
-					{
-						"condition": "minecraft:location_check",
-						"offsetY": -1,
-						"predicate": {
-							"block": {
-								"blocks": "#dc:containers"
-							}
-						}
-					}
-				]
+					]
+				}
 			}
 		}
 	},
