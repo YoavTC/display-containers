@@ -11,7 +11,7 @@
 				"underlined": true
 			}
 		],
-		"min_format": X,
-		"max_format": Y
+		"min_format": 121,
+		"max_format": 121
 	}
 }

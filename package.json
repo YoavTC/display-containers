@@ -1,9 +1,9 @@
 {
 	"name": "display-containers",
-	"version": "",
+	"version": "1.5",
 	"scripts": {
 		"build": "beet",
-		"dev": "tsx scripts/dev.ts"
+		"dev": "tsx --env-file=.env scripts/dev.ts"
 	},
 	"author": "Yoav TC",
 	"devDependencies": {

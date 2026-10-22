@@ -1,8 +1,8 @@
 name: display-containers
-description:
+description: "Display blocks inside Barrels, Cauldrons, Composters and Hoppers"
 author: Yoav TC
 
 data_pack:
-  pack_format:
+  pack_format: 121
   load:
     - src
