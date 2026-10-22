@@ -1,0 +1,24 @@
+{
+	"values": [
+		"#display-containers:full",
+
+		"decorated_pot",
+		"creaking_heart",
+		"stonecutter",
+		"#campfires",
+		"#anvil",
+		"cake",
+		"amethyst_cluster",
+		"cactus",
+		"dirt_path",
+		"lectern",
+		"piston",
+		"piston_head",
+		"moving_piston",
+		"sticky_piston",
+		"scaffolding",
+		"sculk_sensor",
+		"calibrated_sculk_sensor",
+		"vine"
+	]
+}

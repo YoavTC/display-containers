@@ -21,7 +21,7 @@
 								"type": "location_check",
 								"predicate": {
 									"block": {
-										"blocks": "#dc:exclude_fillers"
+										"blocks": "#display-containers:exclude_fillers"
 									}
 								}
 							}
@@ -30,7 +30,7 @@
 							"type": "location_check",
 							"predicate": {
 								"block": {
-									"blocks": "#dc:fillers"
+									"blocks": "#display-containers:fillers"
 								}
 							}
 						},
@@ -39,7 +39,7 @@
 							"offsetY": -1,
 							"predicate": {
 								"block": {
-									"blocks": "#dc:containers"
+									"blocks": "#display-containers:containers"
 								}
 							}
 						}
@@ -48,12 +48,8 @@
 			}
 		}
 	},
-	"requirements": [
-		[
-			"place"
-		]
-	],
+	"requirements": [["place"]],
 	"rewards": {
-		"function": "dc:event_listeners/place_block"
+		"function": "display-containers:_events/on_place_block"
 	}
 }

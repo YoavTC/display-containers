@@ -6,4 +6,4 @@ summon block_display ~.5 ~ ~.5 {Tags:["dc.unset_display"],Passengers:[{id:"minec
 
 # Set up the display's block state and dimensions
 data modify entity @n[type=block_display,tag=dc.unset_display] block_state set string entity @s SelectedItem.id
-execute as @n[type=block_display,tag=dc.unset_display] positioned as @s run function dc:adjust_display
+execute as @n[type=block_display,tag=dc.unset_display] positioned as @s run function display-containers:adjust_display

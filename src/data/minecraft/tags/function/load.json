@@ -1,5 +1,3 @@
 {
-    "values": [
-        "dc:_load"
-    ]
+	"values": ["display-containers:_load"]
 }
