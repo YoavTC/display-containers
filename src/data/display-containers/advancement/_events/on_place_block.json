@@ -1,0 +1,55 @@
+{
+	"criteria": {
+		"place": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"player": {
+					"type": "entity_properties",
+					"entity": "this",
+					"predicate": {
+						"flags": {
+							"is_sneaking": true
+						}
+					}
+				},
+				"location": {
+					"type": "all_of",
+					"terms": [
+						{
+							"type": "inverted",
+							"term": {
+								"type": "location_check",
+								"predicate": {
+									"block": {
+										"blocks": "#display-containers:exclude_fillers"
+									}
+								}
+							}
+						},
+						{
+							"type": "location_check",
+							"predicate": {
+								"block": {
+									"blocks": "#display-containers:fillers"
+								}
+							}
+						},
+						{
+							"type": "location_check",
+							"offsetY": -1,
+							"predicate": {
+								"block": {
+									"blocks": "#display-containers:containers"
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	},
+	"requirements": [["place"]],
+	"rewards": {
+		"function": "display-containers:_events/on_place_block"
+	}
+}
